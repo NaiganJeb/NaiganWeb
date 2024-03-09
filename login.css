@@ -1,0 +1,69 @@
+/* style_login.css */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    border-color: #55acee;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.form-btn {
+    text-align: center;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #8b4513;
+}
+
+.reg-btn a {
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.reg-btn a:hover {
+    text-decoration: underline;
+    color: #8b4513;
+}

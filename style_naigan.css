@@ -1,0 +1,283 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("l.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Enable vertical scrollbar */
+}
+
+body::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e1c7a4; /* Color of the scrollbar thumb */
+   
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ccc; /* Color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #e1c7a4; /* Darker shade on hover */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #e1c7a4; /* Peach color */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark text for contrast against the peach background */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 5px 10px; /* Add padding for better clickable area */
+}
+nav a:hover {
+    color: #8b4513; /* Darker shade of peach for hover effect */
+}
+
+nav a:hover {
+    color: #8b4513; /* Darker shade of peach for hover effect */
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 60%;
+        background-color: #ffcccb; /* Peach color for mobile nav */
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    nav ul.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+}
+
+    section, footer {
+        padding: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+  
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px; /* Increased padding for a larger box */
+}
+
+.home-content h1 {
+    font-size: 36px; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px; /* Increased font size */
+}
+
+
+
+
+main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #f5efd9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, background-color 0.3s ease;
+}
+
+section:hover {
+    background-color: #e1c7a4; /* Your specified color */
+}
+
+
+.active-section {
+    transform: translateX(0);
+}
+
+h1, h2, p {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+a {
+    color: #55acee;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #55acee;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.faq {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    color: #55acee;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 5px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #e1c7a4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #333;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #55acee;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .social-links {
+        margin-bottom: 10px;
+    }
+}
+
